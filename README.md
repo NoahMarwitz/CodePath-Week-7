@@ -2,7 +2,7 @@
 
 Time spent: **4** hours spent in total
 
-> Objective: Find, analyze, recreate, and document **five vulnerabilities** affecting an old version of WordPress
+> Objective: Find, analyze, recreate, and document **three vulnerabilities** affecting an old version of WordPress
 
 ## Pentesting Report
 
@@ -18,7 +18,7 @@ Time spent: **4** hours spent in total
     3) Get an admin or anyone with media upload access to attempt to upload file.
     4) Script triggers on fail to upload.
   - [ ] Affected source code:
-    - [link1](https://core.trac.wordpress.org/browser/branches/4.2/src/wp-admin/load-scripts.php)
+    - [link1](https://core.trac.wordpress.org/browser/branches/4.2/src/wp-admin/load-scripts.php)  
     -CVE: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-9061
 2. (Required) Unauthenticated XSS in Comment
   - [ ] Summary: 
@@ -47,7 +47,7 @@ Time spent: **4** hours spent in total
 
 ## Assets
 
-List any additional assets, such as scripts or files
+Only file of note is "LotsofAs.txt", which contained 82kb of "AAAA"
 
 ## Resources
 
@@ -58,11 +58,11 @@ GIFs created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
-Describe any challenges encountered while doing the work
+If running Vagrant without opening VirtualBox in Administrator mode, Vagrant would fail and lose all connections to Ruby, which required reinstalling Vagrant to fix. 
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright 2018 Noah
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
