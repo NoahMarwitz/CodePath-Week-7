@@ -14,7 +14,7 @@ Time spent: **4** hours spent in total
   - [ ] GIF Walkthrough: <img src="https://i.imgur.com/XFMu1k0.gif" width="800">
   - [ ] Steps to recreate: 
     1) Create a file over 20MB in size
-    2) Name it with an <img src=a onerror=alert(1)>.jpg ending.
+    2) Name it with an `<img src=a onerror=alert(1)>.jpg` ending.
     3) Get an admin or anyone with media upload access to attempt to upload file.
     4) Script triggers on fail to upload.
   - [ ] Affected source code:
