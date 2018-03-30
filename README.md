@@ -7,7 +7,8 @@ Time spent: **4** hours spent in total
 ## Pentesting Report
 
 1. (Required) File Too Large XSS
-  - [ ] Summary: 
+  - [ ] Summary:  
+    The media upload section in Wordpress does not properly sanitize the name of the uploaded media, causing accesses to it to run arbitrary javascript.  
     - Vulnerability types: XSS
     - Tested in version: 4.2
     - Fixed in version: 4.7.5
@@ -22,6 +23,7 @@ Time spent: **4** hours spent in total
     -CVE: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-9061
 2. (Required) Unauthenticated XSS in Comment
   - [ ] Summary: 
+  The comment storage method has a limit of 64kb per comment. Exceeding this causes the HTML to corrupt, allowing for arbitrary javascript to be run through comments.  
     - Vulnerability types: XSS. Buffer Overflow
     - Tested in version: 4.2 
     - Fixed in version: 4.2.1
@@ -34,6 +36,7 @@ Time spent: **4** hours spent in total
     - [Link 1](https://core.trac.wordpress.org/browser/branches/4.2/src/wp-comments-post.php)
 3. (Required) YouTube embed XSS
   - [ ] Summary: 
+    The YouTube embed link is not properly sanitized, allowing for embedded YouTube links to run arbitrary javascript through the post.  
     - Vulnerability types: XSS via failed sanitization
     - Tested in version: 4.2 
     - Fixed in version: 4.7.3
